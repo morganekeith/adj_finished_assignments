@@ -1,0 +1,16 @@
+For this assignment, I cloned a repository from ProPublica named Bedfellows. By using FEC data on PACs, the database was designed to
+calculate a series of seven scores tha tmeasure the length and breadth of the relationships between donors and recipients. It's purpose
+is to exist as a reporting tool for journalists and researchers interested in campaign finance data.
+
+I chose this database because I found it interesting that something this intricate could be displayed so easily for viewers by using
+Python. I'm still not sure of the realm of capabilites of the language and this assignment gave me a deeper glance at the possibilites.
+From my interpretation of the database, I see that the Python uses "if" statements to make something occur based on the scores they
+constructed from the database. I found it interesting that the bulk of the research was done computing the scores from the database and
+that Python reads the assigned scores from the imported database to know how to display and classify certain results. I also found it
+interesting that all the names and queries ran in the database had to be included in a separate Python file, models.py.
+
+My main question was deciphering how exactly the Python code relates or interacts with a MySQL database. I am far more familiar with
+MySQL than I am with Python. I know that the data they used for the project was probably combed over and perfected in MySQL first, but
+I'm not sure how the database interacts with the coding language or how it is displayed. There is a text file in the repository containing
+queries that they ran on the data. What is the relationship between MySQL and Python Library's mysqldb and how did it influence the
+creation of this project?
