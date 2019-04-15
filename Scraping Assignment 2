@@ -1,0 +1,36 @@
+Morgan Keith
+Chase Davis
+4/14/2019
+Advanced Data Journalism
+
+___________________________________________________________________________________________________________________________________________
+Scraping Assignment 2
+
+1. The identifier for Boone County Jail's table of inmates:
+
+<tbody class="stripe" id="mrc_main_table"> </tbody>
+
+2. The identifier for the Missouri Legislation's passed legislation table:
+
+<table id="Table1" style="HEIGHT: 232px" cellspacing="1" cellpadding="1" width="100%" border="0">
+
+3. The identifier for Columbia City Council's table of minutes:
+
+<table width="100%" border="1" cellspacing="0" cellpadding="4" style="clear:both;"
+
+The identifiers for specific "minute" cells are under <a> tags.
+
+4. The identifier for Boone County Jail's detainee mugshots:
+
+<img alt="Mugshot of ACTON, ANTHONY SEAN" src="SH01 MP.I00620s?CNTYP=97824" title="ACTON, ANTHONY SEAN">
+
+5. After opening the network tab in the Missouri House page's selection of Boone, it lists the request method as "GET". We want to modify
+this to see members from 2005. To do so, we examine the current URL:
+
+https://house.mo.gov/MemberGridCluster.aspx?category=county&county=Boone&year=2019&code=R
+
+We modify the request by keeping the county as Boone and modify the year in the URL to 2005:
+
+https://house.mo.gov/MemberGridCluster.aspx?category=county&county=Boone&year=2005&code=R
+
+
