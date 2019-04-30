@@ -1,0 +1,29 @@
+#Establish tool setup
+import urllib2, csv
+from bs4, import BeautifulSoup
+
+#Setup CSV file
+csvfile = open('billdata.csv', 'w')
+billdata_writer = csv.writer(csvfile)
+
+#Retrieve url
+url = https://www.senate.mo.gov/19info/BTS_Web/TrulyAgreed.aspx?SessionType=R
+html = urllib2.urlopen(url).read()
+
+#Process html into parser
+soup = BeautifulSoup(html, "html.parser")
+
+#Scrape data
+tables = soup.find_all('table', {'id': 'Table2'})
+
+for Table2 in tables:
+
+    rows = Table2.find_all('tr')
+    
+    for row in rows:
+    data = []
+    
+    for cell in cells:
+      data.append(cell.text.encode('utf-8'))
+      
+      billdata_writer.writerow(data)
